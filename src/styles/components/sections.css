@@ -1,0 +1,38 @@
+@layer components {
+  .section-gradient {
+    @apply relative overflow-hidden;
+    background: linear-gradient(180deg, #F7F8F9 0%, #E5E7E9 100%);
+  }
+
+  .section-header {
+    @apply text-center mb-16;
+    
+    h2 {
+      @apply text-4xl font-bold text-[#2F3337] mb-4;
+    }
+    
+    p {
+      @apply text-xl text-[#4A4F54] max-w-2xl mx-auto;
+    }
+  }
+
+  .feature-card {
+    @apply bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300;
+    
+    .icon-wrapper {
+      @apply p-3 rounded-xl bg-[#FF6B35]/10;
+      
+      svg {
+        @apply w-6 h-6 text-[#FF6B35];
+      }
+    }
+    
+    h3 {
+      @apply text-xl font-semibold text-[#2F3337] mb-2;
+    }
+    
+    p {
+      @apply text-[#4A4F54];
+    }
+  }
+}

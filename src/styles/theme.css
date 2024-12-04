@@ -1,0 +1,61 @@
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-dark-base text-dark-text;
+    background-image: theme('backgroundImage.noise'), theme('backgroundImage.mesh');
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-dark-card/80 backdrop-blur-md border border-dark-border;
+  }
+
+  .nav-header {
+    @apply fixed top-0 left-0 right-0 z-50 h-16;
+    @apply bg-dark-card/80 backdrop-blur-[10px];
+    @apply border-b border-dark-border;
+  }
+
+  .button-primary {
+    @apply bg-accent-success text-dark-text;
+    @apply hover:brightness-110 active:brightness-90;
+    @apply transition-all duration-200;
+  }
+
+  .button-secondary {
+    @apply bg-dark-element/50 text-dark-text;
+    @apply border border-dark-border;
+    @apply hover:bg-dark-element/80;
+    @apply transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-gradient-to-br from-dark-card to-dark-element;
+    @apply border border-dark-border rounded-xl;
+    @apply shadow-card hover:shadow-card-hover;
+    @apply transition-all duration-300;
+  }
+
+  .input-field {
+    @apply bg-dark-element border border-dark-border rounded-lg;
+    @apply text-dark-text placeholder-dark-secondary;
+    @apply focus:border-accent-success focus:ring-2 focus:ring-accent-success/20;
+    @apply transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      to right,
+      theme('colors.accent.success'),
+      rgba(54, 179, 126, 0.8)
+    );
+  }
+}

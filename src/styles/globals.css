@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-base text-dark-text;
+    background-image: theme('backgroundImage.noise'), theme('backgroundImage.mesh');
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-dark-card border border-dark-border rounded-lg shadow-card backdrop-blur-sm
+           transition-all duration-300 hover:shadow-card-hover;
+    background-image: theme('backgroundImage.card-gradient');
+  }
+
+  .button {
+    @apply px-4 py-2 rounded-lg border border-dark-border bg-dark-element text-dark-text
+           transition-all duration-300 hover:bg-dark-card focus:outline-none focus:ring-2
+           focus:ring-accent-success focus:ring-opacity-50;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 bg-dark-element border border-dark-border rounded-lg
+           text-dark-text placeholder-dark-secondary focus:outline-none focus:ring-2
+           focus:border-accent-success focus:ring-accent-success focus:ring-opacity-50;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 text-dark-secondary hover:text-dark-text transition-colors duration-300;
+  }
+}
+
+.dots-pattern {
+  background-image: theme('backgroundImage.dots');
+  background-size: 16px 16px;
+}

@@ -1,0 +1,36 @@
+@layer components {
+  .card {
+    @apply backdrop-blur-sm transition-all duration-500;
+    background: linear-gradient(
+      145deg,
+      rgba(28, 28, 28, 0.7),
+      rgba(36, 36, 36, 0.9)
+    );
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1;
+    @apply hover:shadow-card-hover;
+    @apply transition-all duration-300;
+  }
+
+  .gradient-border {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      border-radius: 12px;
+      background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255,255,255,0.1),
+        transparent
+      );
+      mask: linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
+  }
+}

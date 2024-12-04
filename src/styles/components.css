@@ -1,0 +1,41 @@
+@layer components {
+  .chart {
+    @apply text-dark-secondary;
+    
+    .recharts-cartesian-grid-horizontal line,
+    .recharts-cartesian-grid-vertical line {
+      @apply stroke-[rgba(47,47,47,0.4)];
+    }
+
+    .recharts-text {
+      @apply fill-dark-secondary;
+    }
+
+    .recharts-line {
+      @apply stroke-accent-success;
+    }
+  }
+
+  .dashboard-card {
+    @apply bg-dark-card border border-dark-border rounded-xl;
+    @apply p-6 shadow-card hover:shadow-card-hover;
+    @apply transition-all duration-300;
+  }
+
+  .stat-card {
+    @apply bg-dark-element/50 rounded-lg p-4;
+    @apply border border-dark-border;
+  }
+
+  .alert {
+    @apply rounded-lg p-4 border;
+    
+    &.alert-success {
+      @apply bg-accent-success/10 border-accent-success text-accent-success;
+    }
+    
+    &.alert-error {
+      @apply bg-accent-error/10 border-accent-error text-accent-error;
+    }
+  }
+}

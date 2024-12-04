@@ -1,0 +1,38 @@
+@layer components {
+  .dashboard-preview {
+    @apply bg-white;
+    
+    /* Override any dark theme styles */
+    * {
+      @apply text-[#2F3337];
+    }
+
+    .stat-card {
+      @apply bg-[#F8F9FA] rounded-2xl p-4 hover:bg-[#F3F4F6] transition-colors;
+    }
+
+    .score-overview {
+      @apply bg-[#F8F9FA] rounded-xl p-6;
+    }
+
+    .ai-insights {
+      @apply bg-[#F8F9FA] rounded-xl p-5;
+    }
+
+    .success-update {
+      @apply bg-[#F6FEF9] rounded-xl p-4;
+    }
+
+    .credit-factor {
+      @apply rounded-xl p-4;
+
+      &.payment {
+        @apply bg-[#F6FEF9];
+      }
+
+      &.usage {
+        @apply bg-[#FFF8F6];
+      }
+    }
+  }
+}

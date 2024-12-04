@@ -1,0 +1,15 @@
+@layer components {
+  .nav-header {
+    @apply fixed top-0 left-0 right-0 z-50;
+    @apply h-16 bg-dark-card/80 backdrop-blur-md;
+    @apply border-b border-dark-border;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 text-dark-secondary hover:text-dark-text transition-colors;
+  }
+
+  .nav-link-active {
+    @apply text-accent-success;
+  }
+}
