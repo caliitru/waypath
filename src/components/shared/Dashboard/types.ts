@@ -143,3 +143,72 @@ export interface HeaderProps {
    onClick: () => void;
  }>;
 }
+
+export interface DashboardPreviewProps {
+  userName: string;
+  creditScore: ScoreData;
+  stats: StatsCardsProps;
+  insights: AIInsight;
+  creditMetrics: CreditMetrics;
+}
+
+export interface ScoreCircleProps {
+  score: number;
+  status: string;
+  change: number;
+}
+
+export interface CreditToolsProps {
+  tools: Array<{
+    id: string;
+    name: string;
+    description: string;
+    status: 'available' | 'locked';
+  }>;
+}
+
+export interface CreditSimulatorProps {
+  currentScore: number;
+  scenarios: Array<{
+    action: string;
+    impact: number;
+  }>;
+}
+
+export interface DisputesListProps {
+  disputes: Array<{
+    id: string;
+    creditor: string;
+    type: string;
+    status: 'pending' | 'in_progress' | 'resolved';
+    date: string;
+  }>;
+}
+
+export interface FinancialCalculatorProps {
+  type: 'debt' | 'savings' | 'credit';
+  initialValues?: {
+    amount?: number;
+    rate?: number;
+    term?: number;
+  };
+}
+
+export interface TaskListProps {
+  tasks: Array<{
+    id: string;
+    title: string;
+    priority: 'high' | 'medium' | 'low';
+    completed: boolean;
+    dueDate?: string;
+  }>;
+}
+
+export interface HeaderProps {
+  title: string;
+  showBackButton?: boolean;
+  actions?: Array<{
+    label: string;
+    onClick: () => void;
+  }>;
+}
