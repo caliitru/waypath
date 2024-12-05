@@ -1,9 +1,21 @@
 // src/components/shared/Dashboard/index.ts
 
-export { default as Dashboard } from './index';  // Changed from './DashboardPreview'
+// index.ts comprehensive exports
+export { default as Dashboard } from './DashboardPreview';
 export { ScoreCircle } from './ScoreCircle';
-export { StatsCards } from './StatsCards';
 export { ScoreChart } from './ScoreChart';
+export { StatsCard } from './StatsCard';
 export { AIInsights } from './AIInsights';
-export type * from './types';
+export { CreditFactors } from './CreditFactors';
+export { CreditTools } from './CreditTools';
+export { CreditSimulator } from './CreditSimulator';
+export { DisputesList } from './DisputesList';
+export { FinancialCalculator } from './FinancialCalculator';
+export { TaskList } from './TaskList';
+export { Header } from './Header';
+
+// Export types
+export * from './types';
+
+// Export mock data
 export { mockData } from './mockData';
