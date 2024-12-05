@@ -125,3 +125,78 @@ export interface HeaderProps {
     onClick: () => void;
   }>;
 }
+
+// src/components/shared/Dashboard/types.ts
+
+import { Loadable } from '../types/Loadable'; // Adjust the path if necessary
+
+// Existing interfaces...
+
+// src/components/shared/Dashboard/types.ts
+
+// ... existing imports ...
+
+// User and Profile Types
+export interface User {
+  firstName: string;
+  lastName?: string;
+  id?: string;
+}
+
+// Credit Score Types
+export interface ScoreData {
+  score: number;
+  status: string;
+  change: number;
+}
+
+// Stats Types
+export interface StatsCardsProps extends Loadable {
+  scoreImprovement: number;
+  itemsRemoved: number;
+  activeDisputes: number;
+  nearComplete: number;
+}
+
+// AI Insights Types
+export interface AIInsight {
+  insights: string[];
+  successUpdate: {
+    message: string;
+    impact: number;
+  };
+}
+
+// Credit Data Types
+export interface CreditMetrics {
+  paymentHistory: {
+    percentage: number;
+    status: string;
+  };
+  creditUsage: {
+    percentage: number;
+    status: string;
+  };
+}
+
+// Chart Types
+export interface ChartData {
+  data: MockData[];
+}
+
+// Component Props
+
+// Update ScoreCircleProps to extend Loadable
+export interface ScoreCircleProps extends Loadable {
+  score: number;
+  status: string;
+  change: number;
+}
+
+// Update DisputesListProps to extend Loadable
+export interface DisputesListProps extends Loadable {
+  disputes: Dispute[];
+}
+
+// Other component props...
+
