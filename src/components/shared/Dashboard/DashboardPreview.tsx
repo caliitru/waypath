@@ -1,10 +1,12 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { ScoreCircle } from './ScoreCircle';
-import { StatsCards } from './StatsCards';
+import { StatsCard } from './StatsCard';
 import { ScoreChart } from './ScoreChart';
 import { AIInsights } from './AIInsights';
+import { CreditFactors } from './CreditFactors';
 import { mockData } from './mockData';
+import type { DashboardProps } from './types';
 
 const DashboardPreview: React.FC = () => {
   return (
