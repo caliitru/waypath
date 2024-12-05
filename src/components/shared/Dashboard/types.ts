@@ -200,3 +200,16 @@ export interface DisputesListProps extends Loadable {
 
 // Other component props...
 
+// src/components/shared/Dashboard/types.ts
+
+import { Dispute } from '../../types/Dispute'; // Adjust the path based on your structure
+import { Loadable } from '../types/Loadable';
+
+// Update DisputesListProps to use the imported Dispute interface
+export interface DisputesListProps extends Loadable {
+  disputes: Dispute[];
+}
+
+// Other interfaces remain unchanged
+
+
