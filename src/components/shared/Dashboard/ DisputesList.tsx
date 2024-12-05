@@ -2,6 +2,18 @@ import React from 'react';
 import { FileText, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import { useCreditStore } from '../../store/creditStore';
 
+// src/components/shared/Dashboard/DisputesList.tsx
+
+import React from 'react';
+import { DisputesListProps } from './types';
+
+const DisputesList: React.FC<DisputesListProps> = ({ disputes, loading, error }) => {
+  // Component implementation
+};
+
+export default DisputesList;
+
+
 const statusIcons = {
   pending: Clock,
   in_progress: AlertCircle,
