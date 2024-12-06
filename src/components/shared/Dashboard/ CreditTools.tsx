@@ -26,7 +26,7 @@ const tabs = [
   }
 ];
 
-export function CreditTools() {
+const CreditTools = () => {
   const [activeTab, setActiveTab] = useState('factors');
 
   const ActiveComponent = tabs.find(tab => tab.id === activeTab)?.component || CreditFactors;
@@ -39,7 +39,7 @@ export function CreditTools() {
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
-            
+
             return (
               <button
                 key={tab.id}
@@ -72,4 +72,6 @@ export function CreditTools() {
       </AnimatePresence>
     </div>
   );
-}
+};
+
+export default CreditTools;
