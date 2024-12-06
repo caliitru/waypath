@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
-import { Navbar } from '../components/landing/Navbar';
-import { Hero } from '../components/landing/Hero';
-import { Features } from '../components/landing/Features';
-import { FeaturesGrid } from '../components/landing/FeaturesGrid';
-import { HowItWorks } from '../components/landing/HowItWorks';
-import { SocialProof } from '../components/landing/testimonials/SocialProof';
-import { Pricing } from '../components/landing/Pricing';
-import { Footer } from '../components/landing/footer/Footer';
+import { 
+  ScoreChart,
+  ScoreCircle,
+  StatsCard 
+} from '@/components/shared/Dashboard';
+import { DashboardDemo } from '../components/landing/DashboardDemo';
 
 export function LandingPage() {
   useEffect(() => {
@@ -27,6 +25,7 @@ export function LandingPage() {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <DashboardDemo />
       <Features />
       <FeaturesGrid />
       <HowItWorks />
