@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
-import { useAuthStore } from '../../store/authStore';
+import { useAuthStore } from 'Store/authStore';
 import { UserRole } from '../../types/auth';
 
 interface ProtectedRouteProps {
