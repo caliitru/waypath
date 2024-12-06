@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Lock, Mail } from 'lucide-react';
-import { useAuthStore } from '../store/authStore';
+import { useAuthStore } from 'Store/authStore';
 import { Navbar } from '../components/landing/Navbar';
 import { Footer } from '../components/landing/footer/Footer';
 
