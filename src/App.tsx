@@ -12,7 +12,7 @@ import { Security } from './pages/legal/Security';
 import { Compliance } from './pages/legal/Compliance';
 import { ProtectedRoute } from './components/auth/ProtectedRoute';
 import { UserRole } from './types/auth';
-import { useAuthStore } from './store/authStore';
+import { useAuthStore } from 'Store/authStore';
 
 function App() {
   const { user } = useAuthStore();
