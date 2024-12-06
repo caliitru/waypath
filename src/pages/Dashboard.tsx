@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/shared/Dashboard/Header';
-import ScoreChart from 'components/shared/Dashboard/ScoreChart';
-import { DisputesList } from 'components/shared/Dashboard/DisputesList';
-import { TaskList } from 'components/shared/Dashboard/TaskList';
+import { ScoreChart } from '../components/shared/Dashboard/ScoreChart';
+import { DisputesList } from '../components/shared/Dashboard/DisputesList';
+import { TaskList } from '../components/shared/Dashboard/TaskList';
 import { DisputeStats } from '../components/disputes/DisputeStats';
 import { DisputeTimeline } from '../components/disputes/DisputeTimeline';
-import CreditTools from 'components/shared/Dashboard/CreditTools';
 import { TimelineFilter } from '../components/shared/TimelineFilter';
 import { useCreditStore } from '../Store/creditStore';
+
 export function Dashboard() {
   const disputes = useCreditStore(state => state.disputes);
 
@@ -28,8 +28,13 @@ export function Dashboard() {
 
         <div className="grid grid-cols-1 gap-6 mt-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <CreditScoreChart />
-            <CreditTools />
+            <ScoreChart data={[]} />
+            <div className="space-y-6">
+              <h2 className="text-lg font-semibold">Credit Tools</h2>
+              <div className="bg-white rounded-lg p-6 shadow-sm">
+                {/* Credit tools content */}
+              </div>
+            </div>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
