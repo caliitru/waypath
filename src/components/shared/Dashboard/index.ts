@@ -7,7 +7,7 @@ export { ScoreChart } from './ScoreChart';
 export { StatsCard } from './StatsCard';
 export { AIInsights } from './AIInsights';
 export { default as CreditFactors } from './CreditFactors';
-export { CreditTools } from 'components/shared/Dashboard/CreditTools';
+export { default as CreditTools } from './CreditTools';
 export { CreditSimulator } from './CreditSimulator';
 export { DisputesList } from 'components/shared/Dashboard/DisputesList';
 export { FinancialCalculator } from './FinancialCalculator';
