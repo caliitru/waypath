@@ -1,14 +1,13 @@
 import React from 'react';
-import { Header } from '../components/dashboard/Header';
-import { CreditScoreChart } from '../components/dashboard/CreditScoreChart';
-import { DisputesList } from '../components/dashboard/DisputesList';
-import { TaskList } from '../components/dashboard/TaskList';
+import Header from '../components/shared/Dashboard/Header';
+import ScoreChart from 'components/shared/Dashboard/ScoreChart';
+import { DisputesList } from 'components/shared/Dashboard/DisputesList';
+import { TaskList } from 'components/shared/Dashboard/TaskList';
 import { DisputeStats } from '../components/disputes/DisputeStats';
 import { DisputeTimeline } from '../components/disputes/DisputeTimeline';
-import { CreditTools } from '../components/dashboard/CreditTools';
+import CreditTools from 'components/shared/Dashboard/CreditTools';
 import { TimelineFilter } from '../components/shared/TimelineFilter';
-import { useCreditStore } from '../store/creditStore';
-
+import { useCreditStore } from '../Store/creditStore';
 export function Dashboard() {
   const disputes = useCreditStore(state => state.disputes);
 
