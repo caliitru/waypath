@@ -2,7 +2,7 @@ import React from 'react';
 import { TrendingUp, Check, Clock } from 'lucide-react';
 import { StatsCardProps } from './types';
 
-export const StatsCards: React.FC<StatsCardsProps> = ({
+export const StatCards: React.FC<StatsCardsProps> = ({
   scoreImprovement,
   itemsRemoved,
   activeDisputes,
