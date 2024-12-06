@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bell, Search, Settings, User, LogOut } from 'lucide-react';
 import { NotificationBadge } from '../../ui/notification/NotificationBadge';
-import { useAuthStore } from '../../../store/authStore';
+import { useAuthStore } from 'Store/authStore';
 
 export function AdminHeader() {
   const navigate = useNavigate();
