@@ -1,21 +1,21 @@
-// src/components/shared/Dashboard/index.ts
-
-// index.ts comprehensive exports
-export { default as Dashboard } from './DashboardPreview';
+// First, export base/independent components
 export { ScoreCircle } from './ScoreCircle';
 export { ScoreChart } from './ScoreChart';
 export { StatsCard } from './StatsCard';
 export { AIInsights } from './AIInsights';
-export { default as CreditFactors } from './CreditFactors';
-export { default as CreditTools } from './CreditTools';
-export { CreditSimulator } from './CreditSimulator';
-export { DisputesList } from 'components/shared/Dashboard/DisputesList';
-export { FinancialCalculator } from './FinancialCalculator';
-export { TaskList } from './TaskList';
 export { Header } from './Header';
+export { TaskList } from './TaskList';
 
-// Export types
+// Then components that might be used by others
+export { default as CreditFactors } from './CreditFactors';
+export { default as FinancialCalculator } from './FinancialCalculator';
+export { default as CreditSimulator } from './CreditSimulator';
+export { DisputesList } from './DisputesList';
+
+// Then components that depend on others
+export { default as CreditTools } from './CreditTools';
+export { default as Dashboard } from './DashboardPreview';
+
+// Utilities last
 export * from './types';
-
-// Export mock data
 export { mockData } from './mockData';
