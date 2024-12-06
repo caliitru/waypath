@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calculator, TrendingUp, LineChart } from 'lucide-react';
-import { CreditFactors } from './CreditFactors';
-import { FinancialCalculator } from './FinancialCalculator';
-import { CreditSimulator } from './CreditSimulator';
+import CreditFactors from './CreditFactors';
+import FinancialCalculator from './FinancialCalculator';
+import CreditSimulator from './CreditSimulator';
 
 const tabs = [
   {
