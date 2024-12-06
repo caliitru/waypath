@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { DashboardPreview } from '@/components/shared/Dashboard';
+import { DashboardPreview } from 'components/shared/Dashboard';
 
 export function LandingPage() {
  useEffect(() => {
