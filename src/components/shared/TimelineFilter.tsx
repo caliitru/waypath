@@ -1,5 +1,6 @@
 import React from 'react';
-import { useTimelineStore } from '../../store/timelineStore';
+import { useTimelineStore } from 'Store/timelineStore';
+
 
 export function TimelineFilter() {
   const { range, setRange } = useTimelineStore();
