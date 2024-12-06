@@ -1,6 +1,6 @@
 import React from 'react';
 import { FileText, Clock, CheckCircle, AlertCircle } from 'lucide-react';
-import { useCreditStore } from '../../store/creditStore';
+import { useCreditStore } from '../../Store/creditStore';
 
 // src/components/shared/Dashboard/DisputesList.tsx
 
