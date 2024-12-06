@@ -1,6 +1,6 @@
 import React from 'react';
 import { FileText, CheckCircle, PieChart } from 'lucide-react';
-import { useCreditStore } from '../../store/creditStore';
+import { useCreditStore } from 'Store/creditStore';
 import { DisputeIcon } from './DisputeIcon';
 
 export function DisputeStats() {
