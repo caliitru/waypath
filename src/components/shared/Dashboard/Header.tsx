@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Bell, Search, User, LogOut } from 'lucide-react';
-import { useAuthStore } from '../../store/authStore';
+import { useAuthStore } from '../../Store/authStore';
 
-export function Header() {
+const Header = () => {
   const navigate = useNavigate();
   const { user, logout } = useAuthStore();
 
@@ -52,4 +52,6 @@ export function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;
