@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckSquare, Calendar, AlertCircle, Star } from 'lucide-react';
-import { useCreditStore } from '../../store/creditStore';
+import { useCreditStore } from 'Store/creditStore';
 
 const priorityColors = {
   high: 'text-red-500',
