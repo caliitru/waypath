@@ -6,7 +6,7 @@ export { ScoreCircle } from './ScoreCircle';
 export { ScoreChart } from './ScoreChart';
 export { StatsCard } from './StatsCard';
 export { AIInsights } from './AIInsights';
-export { CreditFactors } from './CreditFactors';
+export { default as CreditFactors } from './CreditFactors';
 export { CreditTools } from './CreditTools';
 export { CreditSimulator } from './CreditSimulator';
 export { DisputesList } from './DisputesList';
