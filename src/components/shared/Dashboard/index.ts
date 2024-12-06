@@ -9,7 +9,7 @@ export { AIInsights } from './AIInsights';
 export { default as CreditFactors } from './CreditFactors';
 export { CreditTools } from '@/components/shared/Dashboard/CreditTools';
 export { CreditSimulator } from './CreditSimulator';
-export { DisputesList } from './DisputesList';
+export { DisputesList } from '@/components/shared/Dashboard/DisputesList';
 export { FinancialCalculator } from './FinancialCalculator';
 export { TaskList } from './TaskList';
 export { Header } from './Header';
