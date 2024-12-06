@@ -18,7 +18,7 @@ export interface MockData {
 }
 
 // Stats Types
-export interface StatsCardsProps {
+export interface StatsCardProps {
   scoreImprovement: number;
   itemsRemoved: number;
   activeDisputes: number;
